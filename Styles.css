@@ -1,0 +1,19 @@
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: black;
+    font-family: monospace;
+    font-size: 200%;
+}
+p {
+    color: brown;
+    border: 5px solid black;
+    padding: 50px;
+    margin: 50px;
+    font-family: cursive;
+    font-size: 160%;
+}
+h1 {
+    border: 10px solid rgb(15, 11, 224);
+}
