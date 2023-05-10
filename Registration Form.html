@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="icon" type="image/x-icon" href="img/student.jpg">
+
+</head>
+
+<body>
+    <center>
+        <input type="image" src="img/student.jpg" alt="student" width="100px" height="100px"><br><br>
+        <form method="post">
+            
+
+            <label for="fname">Student's Name</label>
+            <input type="text" name="fname" id="fname" placeholder="Student's Fullname" required><br><br>
+            <label for="lname">Father's Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Father's Fullname" required><br><br>
+            <label for="sname">Mother's Name</label>
+            <input type="text" name="sname" id="sname" placeholder="Mother's Fullname" required><br><br>
+            <label for="1">Gender :</label>
+            <input type="radio" name="1" id="1">Male
+            <input type="radio" name="1" id="2">Female<br><br>
+            Date of Birth :<input type="date" name="DOB" id="1" required><br><br>
+            <label for="3"></label>Email :
+            <input type="email" name="1" id="3" placeholder="Enter your email address" required><br><br>
+            <label for="Education">Education:</label>
+            <Select name="Education" id="Education" required>
+                <option value="">-Select-</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="Graduate">Graduate</option>
+                <option value="PG">Post Graduate</option>
+            </Select> <br><br>
+            <label for="Pnumber">Mobile Number:</label>
+            <input type="tel" maxlength="10" name="Pnumber" id="Pnumber" required> <br><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset"><br><br>
+        </form>
+    </center>
+</body>
+
+</html>
