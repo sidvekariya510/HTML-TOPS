@@ -6,15 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration Form</title>
-    <link rel="icon" type="image/x-icon" href="img/student.jpg">
-
+    <link rel="icon" type="image/x-icon" href="images/student.jpg">
+    <style>
+        body {
+            background-image:url(images/rainbow.jpg);
+            font-family: sans-serif;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            display: block;
+            padding: 220px;
+        }
+    </style>
+   
 </head>
 
 <body>
     <center>
-        <input type="image" src="img/student.jpg" alt="student" width="100px" height="100px"><br><br>
-        <form method="post">
-            
+        <input type="image" src="images/student.jpg" alt="student" width="100px" height="100px"><br><br>
+
+        <form method="post" style="font-size: medium;">
 
             <label for="fname">Student's Name</label>
             <input type="text" name="fname" id="fname" placeholder="Student's Fullname" required><br><br>
@@ -40,6 +51,7 @@
             <input type="tel" maxlength="10" name="Pnumber" id="Pnumber" required> <br><br>
             <input type="submit" value="submit">
             <input type="reset" value="reset"><br><br>
+
         </form>
     </center>
 </body>
