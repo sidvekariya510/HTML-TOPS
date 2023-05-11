@@ -1,176 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Periodic Table</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Periodic Table</title>
    <style>
-        table,th {
-border:1px solid black; 
-padding: 9px;
 
-        }
-    </style>
+      body{
+      background-color: lightblue;}
+
+      .t1 {border: 1px solid black;
+         padding: 15px;
+         border-collapse: collapse;
+         border-style: hidden;}
+
+      .t2 {border: 1px solid black;
+         border-style: solid;
+         font-size: small;
+         font-style: italic;
+         width: 75%;}
+         
+      .cyan{ background-color: cyan;}
+      .hotpink{ background-color: hotpink;}
+      .neon{ background-color: rgb(71, 119, 119);}
+      .blue{ background-color: rgb(37, 37, 255);}
+      .pink{ background-color: rgb(255, 81, 0);}
+      .yellow{ background-color: yellow;}
+      .pblue{ background-color: rgb(111, 183, 255);}
+      .green{ background-color: green;}
+      .tomato{ background-color: tomato;}
+      .red{ background-color: rgb(102, 59, 59);}
+
+   </style>
 </head>
-<body> 
-    <center>
-    <h1>Periodic table</h1>
-    <p></p>
- <!-- Row 1 -->
- <table>
- <tr>
-    <th><sup>1</sup>H</th>
-    <th colspan="16"></th>
-
-    <th><sup>2</sup>He</th>
- </tr>
- <!-- Row2 -->
- <tr>
-    <th><sup>3</sup>Li</th>
-    <th><sup>4</sup>Be</th>
-    <th colspan="10" rowspan="2"></th>
-
-    <th><sup>5</sup>B</th>
-    <th><sup>6</sup>C</th>
-    <th><sup>7</sup>N</th>
-    <th><sup>8</sup>O</th>
-    <th><sup>9</sup>F</th>
-    <th><sup>10</sup>Ne</th>
- </tr>
- <!-- row3 -->
- <tr>
-    <th><sup>11</sup>Na</th>
-    <th><sup>12</sup>Mg</th>
-    <!-- <th colspan="10"></th> -->
- 
-    <th><sup>13</sup>Al</th>
-    <th><sup>14</sup>Si</th>
-    <th><sup>15</sup>P</th>
-    <th><sup>16</sup>S</th>
-    <th><sup>17</sup>Cl</th>
-    <th><sup>18</sup>Ar</th>
- </tr>
- <!-- row4 -->
- <tr>
-    <th><sup>19</sup>K</th>
-    <th><sup>20</sup>Ca</th>
-    <th><sup>21</sup>Sc</th>
-    <th><sup>22</sup>Ti</th>
-    <th><sup>23</sup>V</th>
-    <th><sup>24</sup>Cr</th>
-    <th><sup>25</sup>Mn</th>
-    <th><sup>26</sup>Fe</th> 
-    <th><sup>27</sup>Co</th>
-    <th><sup>28</sup>Ni</th>
-    <th><sup>29</sup>Cu</th> 
-    <th><sup>30</sup>Zn</th>
-    <th><sup>31</sup>Ga</th>
-    <th><sup>32</sup>Ge</th>
-    <th><sup>33</sup>As</th>
-    <th><sup>34</sup>Se</th>
-    <th><sup>35</sup>Br</th>
-    <th><sup>36</sup>Kr</th>
- </tr>
- <!-- row5 -->
- <tr>
-    <th><sup>37</sup>Rb</th>
-    <th><sup>38</sup>Sr</th>
-    <th><sup>39</sup>Y</th>
-    <th><sup>40</sup>Zr</th>
-    <th><sup>41</sup>Nb</th>
-    <th><sup>42</sup>Mo</th>
-    <th><sup>43</sup>Tc</th>
-    <th><sup>44</sup>Ru</th> 
-    <th><sup>45</sup>Rh</th>
-    <th><sup>46</sup>Pd</th>
-    <th><sup>47</sup>Ag</th> 
-    <th><sup>48</sup>Cd</th>
-    <th><sup>49</sup>In</th>
-    <th><sup>50</sup>Sn</th>
-    <th><sup>51</sup>Sb</th>
-    <th><sup>52</sup>Te</th>
-    <th><sup>53</sup>I</th>
-    <th><sup>54</sup>Xe</th>
- </tr>
- <!-- row6 -->
- <tr>
-    <th><sup>55</sup>Cs</th>
-    <th><sup>56</sup>Ba</th>
-    <th><sup>57</sup>La</th>
-    <th><sup>72</sup>Hf</th>
-    <th><sup>73</sup>Ta</th>
-    <th><sup>74</sup>W</th>
-    <th><sup>75</sup>Re</th>
-    <th><sup>76</sup>Os</th> 
-    <th><sup>77</sup>Ir</th>
-    <th><sup>78</sup>Pt</th>
-    <th><sup>79</sup>Au</th> 
-    <th><sup>80</sup>Hg</th>
-    <th><sup>81</sup>Tl</th>
-    <th><sup>82</sup>Pb</th>
-    <th><sup>83</sup>Bi</th>
-    <th><sup>84</sup>Po</th>
-    <th><sup>85</sup>At</th>
-    <th><sup>86</sup>Rn</th>
- </tr>
- <!-- row7 -->
- <tr>
-    <th><sup>87</sup>Fr</th>
-    <th><sup>88</sup>Ra</th>
-    <th><sup>89</sup>Ac</th>
-    <th><sup>104</sup>Unq</th>
-    <th><sup>105</sup>Unp</th>
-    <th><sup>106</sup>Unh</th>
-    <th><sup>107</sup>Uns</th>
-    <th><sup>108</sup>Uno</th> 
-    <th><sup>109</sup>Une</th>
-    <th><sup>110</sup>Unn</th>
-    <th colspan="8"></th> 
+<br><br><br><br><br><br><br><br><br><br>
+<body>
    
- </tr>
- <!-- row8 -->
- <tr>
-    <th colspan="3"></th>
+<fieldset>
+   <legend><strong><em>Periodic table</em></strong></legend>
    
-    <th><sup>58</sup>Ce</th>
-    <th><sup>59</sup>Pr</th>
-    <th><sup>60</sup>Nd</th>
-    <th><sup>61</sup>Pm</th>
-    <th><sup>62</sup>Sm</th> 
-    <th><sup>63</sup>Eu</th>
-    <th><sup>64</sup>Gd</th>
-    <th><sup>65</sup>Tb</th> 
-    <th><sup>66</sup>Dy</th>
-    <th><sup>67</sup>Ho</th>
-    <th><sup>68</sup>Er</th>
-    <th><sup>69</sup>Tm</th>
-    <th><sup>70</sup>Yb</th>
-    <th><sup>71</sup>Lu</th>
-    <th></th>
- </tr>
- <!-- row9 -->
- <tr>
-    <th colspan="3"></th>
+   <center>
+      <br><br>
+   
+      <h3>Assignment - Date : 11th May,2023</h3>
+      <h4>Periodic Table</h4>
+      <p>The periodic table, also known as the periodic table of the (chemical) elements, is a rows and columns arrangement of the chemical elements. It is widely used in chemistry, physics, and other sciences, and is generally seen as an icon of chemistry.</p>
+      <!-- Row 1 -->
+      <table class="t1">
+         <tr>
+            <th class="neon"><sup>1</sup>H</th>
+            
+            <th colspan="16"></th>
 
-    <th><sup>90</sup>Th`</th>
-    <th><sup>91</sup>Pa</th>
-    <th><sup>92</sup>U</th>
-    <th><sup>93</sup>Np</th>
-    <th><sup>94</sup>Pu</th>
-    <th><sup>95</sup>Am</th>
-    <th><sup>96</sup>Cm</th>
-    <th><sup>97</sup>Bk</th> 
-    <th><sup>98</sup>Cf</th>
-    <th><sup>99</sup>Es</th>
-    <th><sup>100</sup>Fm</th> 
-    <th><sup>101</sup>Md</th>
-    <th><sup>102</sup>No</th>
-    <th><sup>103</sup>Lr</th>
-    <th></th>
-   
- </tr>
-</table>
+            <th class="neon"><sup>2</sup>He</th>
+         </tr>
+         <!-- Row2 -->
+         <tr>
+            <th class="blue"><sup>3</sup>Li</th>
+            <th class="pink"><sup>4</sup>Be</th>
+            
+            <th colspan="10" rowspan="2"></th>
+
+            <th class="yellow"><sup>5</sup>B</th>
+            <th class="pblue"><sup>6</sup>C</th>
+            <th class="pblue"><sup>7</sup>N</th>
+            <th class="pblue"><sup>8</sup>O</th>
+            <th class="green"><sup>9</sup>F</th>
+            <th class="neon"><sup>10</sup>Ne</th>
+         </tr>
+         <!-- row3 -->
+         <tr>
+            <th class="blue"><sup>11</sup>Na</th>
+            <th class="pink"><sup>12</sup>Mg</th>
+            <!-- <th colspan="10"></th> -->
+
+            <th class="tomato"><sup>13</sup>Al</th>
+            <th class="yellow"><sup>14</sup>Si</th>
+            <th class="pblue"><sup>15</sup>P</th>
+            <th class="pblue"><sup>16</sup>S</th>
+            <th class="green"><sup>17</sup>Cl</th>
+            <th class="neon"><sup>18</sup>Ar</th>
+         </tr>
+         <!-- row4 -->
+         <tr>
+            <th class="blue"><sup>19</sup>K</th>
+            <th class="pink"><sup>20</sup>Ca</th>
+            <th class="red"><sup>21</sup>Sc</th>
+            <th class="red"><sup>22</sup>Ti</th>
+            <th class="red"><sup>23</sup>V</th>
+            <th class="red"><sup>24</sup>Cr</th>
+            <th class="red"><sup>25</sup>Mn</th>
+            <th class="red"><sup>26</sup>Fe</th>
+            <th class="red"><sup>27</sup>Co</th>
+            <th class="red"><sup>28</sup>Ni</th>
+            <th class="red"><sup>29</sup>Cu</th>
+            <th class="red"><sup>30</sup>Zn</th>
+            <th class="tomato"><sup>31</sup>Ga</th>
+            <th class="yellow"><sup>32</sup>Ge</th>
+            <th class="yellow"><sup>33</sup>As</th>
+            <th class="pblue"><sup>34</sup>Se</th>
+            <th class="green"><sup>35</sup>Br</th>
+            <th class="neon"><sup>36</sup>Kr</th>
+         </tr>
+         <!-- row5 -->
+         <tr>
+            <th class="blue"><sup>37</sup>Rb</th>
+            <th class="pink"><sup>38</sup>Sr</th>
+            <th class="red"><sup>39</sup>Y</th>
+            <th class="red"><sup>40</sup>Zr</th>
+            <th class="red"><sup>41</sup>Nb</th>
+            <th class="red"><sup>42</sup>Mo</th>
+            <th class="red"><sup>43</sup>Tc</th>
+            <th class="red"><sup>44</sup>Ru</th>
+            <th class="red"><sup>45</sup>Rh</th>
+            <th class="red"><sup>46</sup>Pd</th>
+            <th class="red"><sup>47</sup>Ag</th>
+            <th class="red"><sup>48</sup>Cd</th>
+            <th class="tomato"><sup>49</sup>In</th>
+            <th class="tomato"><sup>50</sup>Sn</th>
+            <th class="yellow"><sup>51</sup>Sb</th>
+            <th class="yellow"><sup>52</sup>Te</th>
+            <th class="green"><sup>53</sup>I</th>
+            <th class="neon"><sup>54</sup>Xe</th>
+         </tr>
+         <!-- row6 -->
+         <tr>
+            <th class="blue"><sup>55</sup>Cs</th>
+            <th class="pink"><sup>56</sup>Ba</th>
+            <th class="red"><sup>57</sup>La</th>
+            <th class="red"><sup>72</sup>Hf</th>
+            <th class="red"><sup>73</sup>Ta</th>
+            <th class="red"><sup>74</sup>W</th>
+            <th class="red"><sup>75</sup>Re</th>
+            <th class="red"><sup>76</sup>Os</th>
+            <th class="red"><sup>77</sup>Ir</th>
+            <th class="red"><sup>78</sup>Pt</th>
+            <th class="red"><sup>79</sup>Au</th>
+            <th class="red"><sup>80</sup>Hg</th>
+            <th class="tomato"><sup>81</sup>Tl</th>
+            <th class="tomato"><sup>82</sup>Pb</th>
+            <th class="tomato"><sup>83</sup>Bi</th>
+            <th class="yellow"><sup>84</sup>Po</th>
+            <th class="green"><sup>85</sup>At</th>
+            <th class="neon"><sup>86</sup>Rn</th>
+         </tr>
+         <!-- row7 -->
+         <tr>
+            <th class="blue"><sup>87</sup>Fr</th>
+            <th class="pink"><sup>88</sup>Ra</th>
+            <th class="red"><sup>89</sup>Ac</th>
+            <th class="red"><sup>104</sup>Unq</th>
+            <th class="red"><sup>105</sup>Unp</th>
+            <th class="red"><sup>106</sup>Unh</th>
+            <th class="red"><sup>107</sup>Uns</th>
+            <th class="red"><sup>108</sup>Uno</th>
+            <th class="red"><sup>109</sup>Une</th>
+            <th class="red"><sup>110</sup>Unn</th>
+            
+            <th colspan="8"></th>
+         </tr>
+         
+         <tr>
+            <th colspan="19"></th>
+         </tr> 
+         
+         <!-- row8 -->
+         <tr>
+            <th colspan="3" rowspan="2"></th>
+
+            <th class="cyan"><sup>58</sup>Ce</th>
+            <th class="cyan"><sup>59</sup>Pr</th>
+            <th class="cyan"><sup>60</sup>Nd</th>
+            <th class="cyan"><sup>61</sup>Pm</th>
+            <th class="cyan"><sup>62</sup>Sm</th>
+            <th class="cyan"><sup>63</sup>Eu</th>
+            <th class="cyan"><sup>64</sup>Gd</th>
+            <th class="cyan"><sup>65</sup>Tb</th>
+            <th class="cyan"><sup>66</sup>Dy</th>
+            <th class="cyan"><sup>67</sup>Ho</th>
+            <th class="cyan"><sup>68</sup>Er</th>
+            <th class="cyan"><sup>69</sup>Tm</th>
+            <th class="cyan"><sup>70</sup>Yb</th>
+            <th class="cyan"><sup>71</sup>Lu</th>
+
+            <th rowspan="2"></th>
+         </tr>
+         <!-- row9 -->
+         <tr>
+            <!-- <th colspan="3"></th> -->
+
+            <th class="hotpink"><sup>90</sup>Th`</th>
+            <th class="hotpink"><sup>91</sup>Pa</th>
+            <th class="hotpink"><sup>92</sup>U</th>
+            <th class="hotpink"><sup>93</sup>Np</th>
+            <th class="hotpink"><sup>94</sup>Pu</th>
+            <th class="hotpink"><sup>95</sup>Am</th>
+            <th class="hotpink"><sup>96</sup>Cm</th>
+            <th class="hotpink"><sup>97</sup>Bk</th>
+            <th class="hotpink"><sup>98</sup>Cf</th>
+            <th class="hotpink"><sup>99</sup>Es</th>
+            <th class="hotpink"><sup>100</sup>Fm</th>
+            <th class="hotpink"><sup>101</sup>Md</th>
+            <th class="hotpink"><sup>102</sup>No</th>
+            <th class="hotpink"><sup>103</sup>Lr</th>
+            <!-- <th></th> -->
+
+         </tr>
+      </table>
+    
+   <table class="t2">
+      <tr>
+         <th class="blue"> Alkali Metals  </th><br>
+         <th class="pink"> Alkali Earth Metals  </th>
+         <th class="red"> Transition Metals  </th>
+         <th class="tomato"> Post Transition Metals  </th>
+         <th class="yellow"> Metalloids  </th>
+         <th class="cyan"> Lanthanides  </th>
+         <th class="hotpink"> Actinides  </th>
+         <th class="pblue"> Nonmetals  </th>
+         <th class="green"> Halogens  </th>
+         <th class="neon"> Noble Gases  </th>
+       </tr>
+   </table>
+   <br><br>
 </center>
+</fieldset>
+
 </body>
 </html>
