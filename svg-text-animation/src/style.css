@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    background: gray;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: url(https://user-images.githubusercontent.com/26748614/112761068-a9015e80-8ff9-11eb-9574-58724ea6e397.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+}
+
+.rotate {
+  transform-origin: 50% 230%;
+  animation: rotate 4s cubic-bezier(.29,.45,.76,.55) infinite alternate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-27deg);
+  }
+  100% {
+    transform: rotate(27deg);
+  }
+}
+
+.wordsFill {
+  fill:rgb(0, 0, 0);
+}
+
+.wordsStroke  {
+  fill: none;
+  stroke: rgb(255, 255, 255);
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 550;
+  animation: strokeAnimation 5s linear infinite alternate;
+}
+
+@keyframes strokeAnimation {
+  100% {
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+  }
+}
+
+.hideBtn {
+  position: absolute;
+  right: 50px;
+  bottom: 60px;
+  font-family: Tahoma, Geneva, sans-serif;
+  color:rgb(255, 255, 255);
+  font-size: 1.3vw;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px 22px;
+  border-radius: 12px;
+  background: rgb(0, 0, 0);
+  transition: color .7s;
+}
+
+.hideBtn:hover {
+  color:rgb(255, 229, 181);
+}
+
+.infoText {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  background: rgba(22, 22, 22, 0.719);
+  text-align: center;
+  font-family: Tahoma, Geneva, sans-serif;
+  color:rgba(255, 255, 255, 0.74);
+  font-size: 16px;
+}
