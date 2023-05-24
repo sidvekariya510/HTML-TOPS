@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Borders</title>
+    <style>
+        .p1{border-style: dotted}
+        .p2{border-style: dashed}
+        .p3{border-style: solid}
+        .p4{border-style: double}
+        .p5{border-style: groove}
+        .p6{border-style: ridge}
+        .p7{border-style: inset}
+        .p8{border-style: outset}
+        .p9{border-style: none}
+        .p10{border-style: hidden}
+        .p11{border-style: dotted dashed double solid}
+
+
+        .round1 {
+            border: 2px solid red;
+            border-radius: 1px;
+        }
+        .round2 {
+            border: 2px solid red;
+            border-radius: 4px;
+            background-clip: content-box;
+            background-color: lightblue;
+        }
+        .round3 {
+            border: 2px solid red;
+            border-radius: 6px;
+            background-color: lightblue;
+            background-clip: border-box;
+        }
+        .round4 {
+            border-left: 6px solid blue;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+<h2>The border-style Property</h2>
+<p>This property specifies what kind of border to display:</p>
+
+<h2>The border-radius Property</h2>
+<p>This property is used to add rounded borders to an element:</p>
+
+<p class="p1">A dotted border.</p>
+<p class="p2">A dashed border.</p>
+<p class="p3">A solid border.</p>
+<p class="p4">A double border.</p>
+<p class="p5">A groove border.</p>
+<p class="p6">A ridge border.</p>
+<p class="p7">An inset border.</p>
+<p class="p8">An outset border.</p>
+<p class="p9">No border.</p>
+<p class="p10">A hidden border.</p>
+<p class="p11">A mixed border.</p>
+
+<p class="normal">Normal border</p>
+<p class="round1">Round border</p>
+<p class="round2">Rounder border</p>
+<p class="round3">Roundest border</p>
+<p class="round4">Roundest border</p>
+
+</body>
+</html>

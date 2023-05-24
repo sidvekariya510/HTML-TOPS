@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Login</title>
+    <link rel="icon" href="/images/Facebook_Logo.png">
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: linear-gradient(#dadada, #0f2252);
+        }
+
+        .login-box {
+            position: absolute;
+            background-clip: padding-box;
+            top: 50%;
+            left: 50%;
+            right: 50%;
+            padding: 50px;
+            width: 400px;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.6);
+            box-sizing: border-box;
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+        }
+
+        .login-box,
+        h2 {
+            margin: 0 0 10px;
+            text-align: center;
+            color: #1778f2;
+            padding: 15px;
+        }
+
+        .login-box .user-box input {
+            width: 95%;
+            padding: 10px 5px;
+            font-size: 1em;
+            color: rgb(197, 194, 194);
+            margin-bottom: 20px;
+            border: 1px solid rgba(26, 26, 26, 0.5);
+            outline: none;
+            background: transparent;
+            border-radius: 2px;
+        }
+
+        .login-box .login-btn {
+            padding: 8px 160px 8px 160px;
+            margin: 20px 0 30px 0;
+            background-color: #1778f2;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            color: white;
+            font-size: small;
+        }
+
+        ::placeholder {
+            font-size: small;
+        }
+
+        .forgot a {
+            padding-bottom: 20px;
+            font-size: 0.8em;
+            color: #1778f2;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        .signup {
+            padding-bottom: 20px;
+            font-size: 0.8em;
+            color: #b1b1b1;
+            text-decoration: none;
+            margin: 30px 0 0 0;
+        }
+
+        .signup-btn {
+            color: #1778f2;
+            text-decoration: none;
+        }
+
+        .loginbtn {
+            color: white;
+            font-size: small;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <h2>facebook</h2>
+        <form action="https://www.facebook.com">
+            <div class="user-box">
+                <input id="username" type="text" placeholder="Email address or phone number" required>
+                <label for="username"></label>
+            </div>
+            <div class="user-box">
+                <input id="password" type="text" placeholder="Password" required>
+                <label for="password"></label>
+            </div>
+            <button class="login-btn" type="submit">Log in</button>
+        </form>
+        <div class="forgot"><a href="#">Forgotten password?</a></div>
+        <div class="signup">Don't have an account? <a class="signup-btn" href="#">Sign up</a></div>
+    </div>
+</body>
+
+</html>
