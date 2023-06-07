@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Navbar</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            background: black;
+
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-image: url(/images/Worldmap.png);
+            background-repeat: no-repeat;
+            height: 515px;
+        }
+
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: transparent;
+            position: sticky;
+            top: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            padding: 30px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            color: aqua;
+            font-size: large;
+        }
+
+        #flexbox {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            justify-content: center;
+            background-color: black;
+
+        }
+
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            vertical-align: middle;
+            margin-top: 8px;
+            filter: grayscale(100%);
+        }
+
+        .column:nth-child(even) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 60px;
+        }
+
+        img:hover {
+            filter: grayscale(0%);
+            transition: .3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="logo"><img src="/images/camera.ico" width="150px"></div>
+        <div class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="flexbox">
+        <div class="column">
+
+            <img src="/images/7stones.jpg" style="width:100%">
+            <img src="/images/1@clock.jpg" style="width:100%">
+            <img src="/images/alarm.jpg" style="width:100%">
+            <img src="/images/carwindow.jpg" style="width:100%">
+            <img src="/images/camlense.jpg" style="width:100%">
+            <img src="/images/greenapple.jpg" style="width:100%">
+            <img src="/images/leaves.jpg" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="/images/bench.jpg" style="width:100%">
+            <img src="/images/efltower.jpg" style="width:100%">
+            <img src="/images/longexpo.jpg" style="width:100%">
+            <img src="/images/juiceglass.jpg" style="width:100%">
+            <img src="/images/peas.jpg" style="width:100%">
+            <img src="/images/lighttrail.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="/images/pug.jpg" style="width:100%">
+            <img src="/images/polarbear.jpg" style="width:100%">
+            <img src="/images/redcar.jpg" style="width:100%">
+            <img src="/images/pup.jpg" style="width:100%">
+            <img src="/images/road.jpg" style="width:100%">
+            <img src="/images/swimpool.jpg" style="width:100%">
+            <img src="/images/ukflag.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="/images/volcanoshapes.jpg" style="width:100%">
+            <img src="/images/waterfall.jpg" style="width:100%">
+            <img src="/images/greenapple.jpg" style="width:100%">
+            <img src="/images/bgblur.jpg" style="width:100%">
+            <img src="/images/boatinbottle.jpg" style="width:100%">
+            <img src="/images/bridge.jpg" style="width:100%">
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="footer">
+        <footer>
+            <p>&copy All rights reserved by Siddharth Vekariya</p>
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook-f" style="color: #1969d2;"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram" style="color: #ff1a75;"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter" style="color: #3d84ff;"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

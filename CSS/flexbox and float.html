@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            display: inline;
+            padding: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 247, 255);
+        }
+
+        ul {
+            padding: 30px;
+        }
+
+        header {
+            background-color: black;
+            color: aqua;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo{
+            padding: 10px 20px;
+        }
+
+        .left {
+            height: 40vh;
+            width: 40vw;
+            background-color: blueviolet;
+            /* float: left; */
+        }
+
+        .right {
+            height: 40vh;
+            width: 40vw;
+            background-color: brown;
+            /* float: right; */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        footer {
+        position: fixed;
+        bottom: 0;
+        
+        }
+        .copyright{
+            background-color: black;
+            color: aliceblue;
+            display: x;
+            justify-content: center;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="/images/css3.ico" alt="" height="50px" width="50px"></div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <footer><p class="copyright"> &copy Copyright Siddharth 2023</p></footer>
+</body>
+
+</html>
