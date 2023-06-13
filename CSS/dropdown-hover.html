@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown & Hover</title>
+    <style>
+        .dropbtn {
+            background-color: cornflowerblue;
+            color: rgb(255, 255, 255);
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            display: block;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .dropcontent {
+            display: none;
+            position: absolute;
+            overflow: auto;
+            height: 150px;
+            box-shadow: 0px 12px 16px 0px rgba(0,0,0,0.5);
+        }
+
+        .dropcontent a {
+            display: block;
+            padding: 5px 15px;
+            min-width: 150px;
+            text-decoration: none;
+            color: black;
+            cursor: default;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: rgb(152, 193, 247);
+        }
+
+        .dropdown:hover .dropcontent {
+            display: block;
+        }
+
+        .dropcontent a:hover {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Select city from below dropdown list</h3>
+    <div class="dropdown">
+        <button class="dropbtn">Cities</button>
+        <div class="dropcontent">
+            <a href="#">Surat</a>
+            <a href="#">Vadodara</a>
+            <a href="#">Rajkot</a>
+            <a href="#">Ahmedabad</a>
+            <a href="#">Surat</a>
+            <a href="#">Vadodara</a>
+            <a href="#">Rajkot</a>
+            <a href="#">Ahmedabad</a>
+            <a href="#">Surat</a>
+            <a href="#">Vadodara</a>
+            <a href="#">Rajkot</a>
+            <a href="#">Ahmedabad</a>
+            <a href="#">Surat</a>
+            <a href="#">Vadodara</a>
+            <a href="#">Rajkot</a>
+            <a href="#">Ahmedabad</a>
+        </div>
+    </div>
+</body>
+
+</html>

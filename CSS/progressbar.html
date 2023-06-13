@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Progress bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .progress {
+            background-color: red;
+            height: 1.5px;
+            animation: progress 1s ease-in-out 1;
+        }
+
+        header {
+            background-color: black;
+            height: 15vh;
+        }
+
+        .container {
+            background-color: burlywood;
+            height: 85vh;
+        }
+
+        img {
+            animation: carwheel 1s linear infinite;
+        }
+
+        @keyframes progress {
+            0% {
+                width: 0;
+            }
+
+            40% {
+                width: 20vw;
+            }
+
+            80% {
+                width: 80vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+        }
+
+        @keyframes carwheel {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header>
+        <img class="wheel" src="/images/wheel.png" alt="" width="40vw">
+    </header>
+    <div class="container"></div>
+</body>
+
+</html>
