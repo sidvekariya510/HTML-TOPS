@@ -14,13 +14,13 @@ header {
     background-color: var(--main-bg-color);
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav ul {
+header nav ul {
     height: 8vh;
     display: flex;
     justify-content: center;
@@ -29,18 +29,18 @@ nav ul {
     background-color: var(--main-bg-color);
 }
 
-nav ul li {
+header nav ul li {
     padding: 0 30px;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
     color: white;
     font-family: 'Cinzel Decorative', cursive;
     font-family: 'Open Sans', sans-serif;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     color: #94bdff;
 }
 
