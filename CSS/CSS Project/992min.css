@@ -1,0 +1,59 @@
+@media (min-width:992px) {
+
+    /* header */
+
+    header .right ul {
+        margin-right: -8px;
+    }
+
+    header .right ul li {
+        padding: 24px;
+    }
+
+    /* main content */
+
+    main .container .grid-content .left-content .innercontent {
+        padding-left: 30px;
+    }
+
+    main .container .grid-content .left-content .innercontent h6 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    main .container .grid-content .left-content .innercontent h3 {
+        font-size: 43px;
+        font-weight: 400;
+        line-height: 58px;
+    }
+
+    main .container .grid-content .left-content .innercontent h3 span {
+        font-weight: 700;
+        font-size: 41px;
+        margin: 20px 0;
+    }
+
+    main .container .grid-content .left-content .innercontent p {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    main .container .grid-content .left-content .innercontent button {
+        font-size: 17px;
+        padding: 10px 25px;
+        font-weight: 600;
+    }
+
+    main .container .grid-content .right-content {
+        min-height: 108vh;
+        position: relative;
+    }
+
+    /* section */
+
+    section .container2 {
+        gap: 65px;
+        margin: 25px 65px;
+    }
+}
