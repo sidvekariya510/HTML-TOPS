@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-sans;
+    font-family: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
 }
 
 /* header */
@@ -14,11 +14,12 @@ header {
 
 header .left h3 {
     font-size: 40px;
-    margin: 8px 29px;
+    margin: 14px 29px;
     font-weight: 800;
     color: white;
 }
-header .left h3:hover span i{
+
+header .left h3:hover span i {
     color: #d8b02c;
 }
 
@@ -32,7 +33,6 @@ header .left h3 span i {
 header .right ul {
     display: flex;
     margin-right: 25px;
-
 }
 
 header .right ul li {
@@ -47,7 +47,8 @@ header .right ul li a {
     font-weight: bold;
     transition: all 0.2s;
 }
-header .right ul li a:hover{
+
+header .right ul li a:hover {
     color: #F2C532;
 }
 
@@ -106,22 +107,27 @@ main .container .grid-content .left-content .innercontent button {
     background-color: transparent;
     transition: all 0.4s;
 }
-main .container .grid-content .left-content .innercontent button:hover{
-    background-color:#006989;
+
+main .container .grid-content .left-content .innercontent button:hover {
+    background-color: #006989;
 }
-main .container .grid-content .left-content .innercontent button:hover a{
-color:white;
+
+main .container .grid-content .left-content .innercontent button:hover a {
+    color: white;
 }
-main .container .grid-content .left-content .innercontent button a{
+
+main .container .grid-content .left-content .innercontent button a {
     text-decoration: none;
     color: #006989;
     transition: all 0.4s;
 }
+
 main .container .grid-content .right-content {
-     min-height: 100vh;
-     position: relative;
+    min-height: 100vh;
+    position: relative;
 }
-main .container .grid-content .right-content img{
+
+main .container .grid-content .right-content img {
     position: absolute;
     width: 100%;
     height: 86%;
@@ -134,8 +140,8 @@ main .container .grid-content .right-content img{
 section .container2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 50px;
-    margin: 0px 90px 50px 90px;
+    gap: 70px;
+    margin: 70px;
 }
 
 section .container2 .earth {
@@ -156,20 +162,132 @@ section .container2 .icon-menu i {
     transition: all 0.4s;
 }
 
-section .container2 .icon-menu:hover i{
-    color:#006989;
+section .container2 .icon-menu:hover i {
+    color: #006989;
     background-color: transparent;
 }
 
-section .container2 .icon-menu a{
+section .container2 .icon-menu a {
     display: block;
     text-decoration: none;
     color: #141414;
     font-weight: 600;
     font-size: 20px;
 }
-section .container2 .icon-menu p{
+
+section .container2 .icon-menu p {
     opacity: 0.5;
     margin-top: 10px;
 }
 
+/* gallery title */
+
+.gallery-title {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 320px;
+    width: 90%;
+    margin-top: 200px;
+}
+
+.gallery-title .title-content {
+    margin-left: 85px;
+    width: 330px;
+}
+
+.gallery-title .title-content .subtitle {
+    color: #006989;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 70px;
+}
+
+.gallery-title .title-content .subtitle::before {
+    display: block;
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #DB162F;
+    position: absolute;
+    left: 2px;
+    top: 50%;
+}
+
+.gallery-title .title-content .main-title {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 700;
+}
+
+/* row-gallery */
+
+.gallery {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    margin: 90px;
+}
+
+.row-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px 0px;
+    width: 1050px;
+}
+
+.row-gallery .col-gallery {
+    position: relative;
+}
+
+.row-gallery .col-gallery .img-container {
+    position: relative;
+    width: 330px;
+}
+
+.row-gallery .col-gallery .img-container::after {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.85) 100%);
+    bottom: 3px;
+    left: 0;
+    height: 40%;
+    content: " ";
+    position: absolute;
+    border-radius: 6px;
+    width: 330px;
+}
+
+.row-gallery .col-gallery .img-container img {
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+}
+
+.row-gallery .col-gallery .info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    margin: 8px;
+}
+
+.row-gallery .col-gallery .info .dest {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.row-gallery .col-gallery .info .duration {
+    font-weight: 400;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.row-gallery .col-gallery .info .duration span {
+    color: #d8b02c;
+    font-weight: 700;
+}
