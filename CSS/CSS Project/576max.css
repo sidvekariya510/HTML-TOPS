@@ -222,4 +222,143 @@
         font-weight: 400;
         font-size: 11px;
     }
+
+
+
+    /* section3 */
+    .section3 .video-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* video */
+    .section3 .video-container video {
+        margin: 50px 100px;
+        border-radius: 12px;
+        padding: 0px 400px;
+    }
+    
+    /* short video title */
+    .shortvid {
+        position: relative;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+    
+    .shortvid .title-content {
+        position: absolute;
+        display: inline-block;
+        width: 100%;    
+    }
+    
+    .shortvid .title-content .main-title {
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 700;
+    }
+    
+    .shortvid .title-content .left {
+        width: 100%;
+        margin-left: 20px;
+    }
+    
+    .shortvid .title-content .subtitle {
+        font-size: 15px;
+        font-weight: 700;
+        position: relative;
+        padding-left: 45px;
+    }
+    
+    .shortvid .title-content .subtitle::before {
+        width: 35px;
+        position: absolute;
+        left: 2px;
+        top: 50%;
+    }
+    
+    .shortvid .title-content .right {
+        width: 88%;
+        margin-right: 50px;
+        margin-left: 20px;
+    }
+    
+    .shortvid .title-content .right p {
+        font-size: 15px;
+        text-align: justify;
+        opacity: 0.4;
+        line-height: 20px;
+        padding-top: 30px ;
+    }
+    
+    /* Booknow */
+    .booknow {
+        display: flex;
+        flex-wrap: wrap;
+        width: 92%;
+        margin: 250px 0px 100px 20px;
+    }
+    
+    .booknow .title-content {
+        width: 100%;
+    }
+    
+    .booknow .title-content .subtitle {
+        font-size: 15px;
+        font-weight: 700;
+        position: relative;
+        padding-left: 45px;
+    }
+    
+    .booknow .title-content .subtitle::before {
+        width: 35px;
+        position: absolute;
+        left: 2px;
+        top: 50%;
+    }
+    
+    .booknow .title-content .main-title {
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 700;
+    }
+    
+    /* form */
+    .booknow .form {
+        width: 100%;
+    }
+    
+    .booknow .form .form-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px 0px;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .booknow .form .form-container .box label {
+        font-weight: 600;
+    }
+    
+    .booknow .form .form-container .box select,
+    .booknow .form .form-container .box input,
+    .booknow .form .form-container .box button {
+        width: 90%;
+        font-size: 15px;
+        line-height: 25px;
+        padding: 12px 12px 12px 12px;
+        color: #8C8C8C;
+        border-radius: 6px;
+        border: 1px solid transparent;
+        background: #F2F2F2;
+        height: 50px;
+        margin: 10px 0;
+    }
+    
+    .booknow .form .form-container .box button {
+        background-color: #006989;
+        font-weight: 700;
+        color: white;
+    }
 }

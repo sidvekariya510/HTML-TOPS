@@ -301,8 +301,10 @@ section .container2 .icon-menu p {
 
 /* video */
 .section3 .video-container video {
-    margin: 50px 100px;
-    border-radius: 8px;
+    margin: 50px 50px;
+    border-radius: 10px;
+    padding: 0px;
+    width: 1100px;
 }
 
 /* short video title */
